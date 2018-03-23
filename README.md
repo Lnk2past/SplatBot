@@ -1,7 +1,7 @@
 # SplatBot
 Discord bot for scraping and reporting player stats. Since I started streaming Splatoon 2 on Twitch, I wanted to be able to create some hook into my stats so that I could easily report on them in Discord. Eventually I will integrate with Twitch's API.
 
-Runnin the bot allows for something like the following in Discord:
+Running the bot allows for something like the following in Discord:
 
 ```
 DRLEOSPACEMAN - Today at 6:30 PM
@@ -9,16 +9,42 @@ DRLEOSPACEMAN - Today at 6:30 PM
 SplatBotBOT - Today at 6:30 PM
 Player:DRSPACEMAN lv.19
 --- Current Rankings ---
-Clam Blitz: B-
+Clam Blitz: B+
 Tower Control: B+
 Splat Zones: B+
 Rainmaker: B+
 ```
 
+or
+
+```
+DRLEOSPACEMAN - Today at 6:30 PM
+!splat-gear
+SplatBotBOT - Today at 6:30 PM
+Player:DRSPACEMAN lv.19
+--- Current Gear ---
+ - Weapon: Sploosh-o-matic
+    - Sub: Curling Bomb
+    - Special: Splashdown
+
+ - Clothes: Crimson Parashooter by Annaki
+    - Main Skill: Special Charge Up
+    - Sub Skill #1: Cold-Blooded
+
+ - Clothes: Purple Sea Slugs by Tentatek
+    - Main Skill: Run Speed Up
+    - Sub Skill #1: Cold-Blooded
+    - Sub Skill #2: Special Charge Up
+
+ - Clothes: Squidlife Headphones by Forge
+    - Main Skill: Ink Recovery Up
+    - Sub Skill #1: Cold-Blooded
+```
+
 # Next Steps
-1. Add in additional message hooks for gear.
-2. Add in additional message hooks for additional stats (stages, regular play, etc.)
-3. Add configurable inputs for the hooks (who can trigger it, when it is triggered, output channel, etc.)
+1. Add in additional message hooks for additional stats (stages, regular play, etc.)
+2. Add configurable inputs for the hooks (when it is triggered, output channel, etc.)
+3. Add in additional details on weapons/favorites.
 
 # Setup/Installation
 It is assumed here that you own/maintain a Discord server.
@@ -40,3 +66,6 @@ It is assumed here that you own/maintain a Discord server.
 ## Running the Bot
 1. With the bot added to your Discord, you can now run: `node splatbot.js`. This will print out some indication that a connection was established.
 2. Within Discord, type into a text channel that SplatBot has access to: `!splat`. This will provide simple output of your player name, level, and rankings across each competetive mode.
+
+## Configuring
+1. You may specify a list of users the bot will listen for in splatbot_config.json. Simply add in users in the format "username#id". Leaving the list empty will allow anyone to trigger SplatBot.
