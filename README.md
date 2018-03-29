@@ -23,34 +23,37 @@ DRLEOSPACEMAN - Today at 6:30 PM
 SplatBotBOT - Today at 6:30 PM
 Player:DRSPACEMAN lv.19
 --- Current Gear ---
- - Weapon: Sploosh-o-matic
-    - Sub: Curling Bomb
-    - Special: Splashdown
+ - weapon: Sploosh-o-matic
+    - sub: Curling Bomb
+    - special: Splashdown
 
- - Clothes: Crimson Parashooter by Annaki
-    - Main Skill: Special Charge Up
-    - Sub Skill #1: Cold-Blooded
+ - clothes: Crimson Parashooter by Annaki
+    - main skill: Special Charge Up
+    - sub skill #1: Cold-Blooded
 
- - Clothes: Purple Sea Slugs by Tentatek
-    - Main Skill: Run Speed Up
-    - Sub Skill #1: Cold-Blooded
-    - Sub Skill #2: Special Charge Up
+ - shoes: Purple Sea Slugs by Tentatek
+    - Main skill: Run Speed Up
+    - sub skill #1: Cold-Blooded
+    - sub skill #2: Special Charge Up
 
- - Clothes: Squidlife Headphones by Forge
-    - Main Skill: Ink Recovery Up
-    - Sub Skill #1: Cold-Blooded
+ - head: Squidlife Headphones by Forge
+    - main skill: Ink Recovery Up
+    - sub skill #1: Cold-Blooded
 ```
+You can also have the bot monitor your progress with the ```!splat-monitor``` command. This will periodically check your stats and report on player and mode rank ups. You may run the command again to disable the monitoring.
 
 # Next Steps
 1. Add in additional message hooks for additional stats (stages, regular play, etc.)
 2. Add configurable inputs for the hooks (when it is triggered, output channel, etc.)
 3. Add in additional details on weapons/favorites.
+4. Add in monitoring of gear level ups.
+5. Add in monitoring of match results.
 
 # Setup/Installation
 It is assumed here that you own/maintain a Discord server.
 
 ## Download
-1. Download and install [node-js](https://nodejs.org/en/). I went with v8.10.0 LTS (recommended version a the time of this writing).
+1. Download and install [node-js](https://nodejs.org/en/). I went with v8.10.0 LTS (recommended version at the time of this writing).
 2. Clone this repo or download as a zip and unzip it somewhere.
 3. Open up a command prompt/powershell/terminal and navigate to where you unzipped the source.
 4. Run `npm install request discord.js --save`
